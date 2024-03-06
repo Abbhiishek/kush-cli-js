@@ -1,12 +1,12 @@
 {
   "name": "@abhishekkushwaha/kush-cli",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "CLI tool for socket communication",
   "bin": {
     "kush-cli": "./bin/kush-cli"
   },
   "scripts": {
-    "start": "tsc && node bin/kush-cli"
+    "start": "node src/index.js"
   },
   "keywords": [
     "connect",

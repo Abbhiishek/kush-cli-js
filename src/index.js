@@ -25,7 +25,7 @@ if (!options.name) {
     process.exit(1);
 }
 
-const socket = io(options.url);
+const socket = io(options.url || 'http://localhost:3000');
 
 socket.on('connect', () => {
     console.log('Connected to socket server');
