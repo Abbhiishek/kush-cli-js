@@ -4,6 +4,7 @@ const io = require('socket.io-client');
 const program = new Command();
 
 program
+    .option('-u, --url <url>', 'Socket server URL')
     .option('-r, --room <roomId>', 'Room ID')
     .option('-c, --create', 'Create a new room')
     .option('-j, --join', 'Join an existing room')
@@ -24,7 +25,7 @@ if (!options.name) {
     process.exit(1);
 }
 
-const socket = io("wss://kush-cli.vercel.app");
+const socket = io(options.url);
 
 socket.on('connect', () => {
     console.log('Connected to socket server');

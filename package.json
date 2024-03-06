@@ -1,6 +1,6 @@
 {
   "name": "@abhishekkushwaha/kush-cli",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "CLI tool for socket communication",
   "bin": {
     "kush-cli": "./bin/kush-cli"
