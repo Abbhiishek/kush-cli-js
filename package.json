@@ -1,12 +1,16 @@
 {
   "name": "@abhishekkushwaha/kush-cli",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "CLI tool for socket communication",
   "bin": {
     "kush-cli": "./bin/kush-cli"
   },
   "scripts": {
     "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abbhiishek/kush-cli-js.git"
   },
   "keywords": [
     "connect",
